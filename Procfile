@@ -1,2 +1,2 @@
-web: gunicorn meal_make.wsgi:application
+web: gunicorn meal_make.wsgi:application --bind 0.0.0.0:$PORT
 
