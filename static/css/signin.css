@@ -1,0 +1,97 @@
+/* Restaurant-Inspired Color Palette */
+:root {
+  --background-dark: #2E3B2F; /* Dark Olive Green */
+  --background-light: #F7F5ED; /* Soft Cream */
+  --accent-gold: #D9C17E; /* Muted Gold */
+  --text-primary: #1C1C1C; /* Charcoal Black */
+  --text-secondary: #A5A5A5; /* Subtle Gray */
+  --button-hover: #4F6B48; /* Rich Green */
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-dark);
+  color: var(--text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Form Container */
+div {
+  background-color: var(--background-light);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+}
+
+/* Heading */
+h3 {
+  color: var(--accent-gold);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  text-shadow: 1px 1px var(--text-secondary);
+}
+
+/* Form Elements */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--text-secondary);
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--text-primary);
+  background-color: var(--background-light);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 4px var(--accent-gold);
+}
+
+/* Button Styles */
+button {
+  background-color: var(--accent-gold);
+  color: var(--text-primary);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+  color: var(--background-light);
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  div {
+    width: 90%;
+  }
+}
